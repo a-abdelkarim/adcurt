@@ -1356,6 +1356,20 @@ h6 {
 }
 
 
+.footer-contact {
+  text-align: right;
+}
+
+.footer-info {
+  text-align: right;
+  float: left;
+}
+
+.footer-newsletter{
+  text-align: right;
+}
+
+
 main section .container .section-header p span {
   color: #007bff;
   font-weight: bold;
