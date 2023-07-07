@@ -1,862 +1,139 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>adcurt</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adcurt | coming soon..</title>
 
-    <!-- Favicons -->
-    <link href="img/favicon.png" rel="icon">
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- style -->
+    <style>
+        /* Set height to 100% for body and html to enable the background image to cover the whole page: */
+        body, html {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+  
+        .bgimg {
+            /* Background image */
+            background-image: url('images/bg.jpg');
+            /* Full-screen */
+            height: 100%;
+            /* Center the background image */
+            background-position: center;
+            /* Scale and zoom in the image */
+            background-size:cover;
+            /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+            position: relative;
+            /* Add a white text color to all elements inside the .bgimg container */
+            color: white;
+            /* Add a font */
+            font-family: "Courier New", Courier, monospace;
+            /* Set the font-size to 25 pixels */
+            font-size: 25px;
+        }
+        
+        /* Position text in the top-left corner */
+        .topleft {
+            position: absolute;
+            top: 0;
+            left: 16px;
+        }
+        
+        /* Position text in the bottom-left corner */
+        .bottomleft {
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+        }
+        
+        /* Position text in the middle */
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        /* Style the <hr> element */
+        hr {
+            margin: auto;
+            width: 40%;
+        }
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+        #bg{
+            position: relative;
+            top: 0;
+            right: 0;
+            width: 100%; 
+            height: 100%;
+            background-color: rgba(6, 5, 11, 0.70);
+        }
 
-    <!-- Bootstrap CSS File -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        #curt {
+            width:75px;
+            height: 75px;
+            border-radius: 75px;
+            display: inline-block;
+            overflow: hidden;
+        }
 
-    <!-- Libraries CSS Files -->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Main Stylesheet File -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- =======================================================
-        Theme Name: NewBiz
-        Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
-        Author: BootstrapMade.com
-        License: https://bootstrapmade.com/license/
-    ======================================================= -->
+        #demo {
+            font-style: bold;
+        }
+    </style>
 </head>
-
 <body>
 
-    <!--==========================
-    Header
-    ============================-->
-    <header id="header" class="fixed-top">
-        <div class="container">
-
-            <div class="logo float-left">
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-                <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a>
-            </div>
-
-            <nav class="main-nav float-right d-none d-lg-block">
-                <ul>
-                <li class="active"><a href="#intro">الرئيسية</a></li>
-                <li><a href="#about">من نحن</a></li>
-                <li><a href="#services">خدماتنا</a></li>
-                <li><a href="#portfolio">قائمة الأعمال</a></li>
-                <li><a href="#team">فريقنا</a></li>
-                <li class="drop-down"><a href="">Drop Down</a>
-                    <ul>
-                    <li><a href="#">Drop Down 1</a></li>
-                    <li class="drop-down"><a href="#">Drop Down 2</a>
-                        <ul>
-                        <li><a href="#">Deep Drop Down 1</a></li>
-                        <li><a href="#">Deep Drop Down 2</a></li>
-                        <li><a href="#">Deep Drop Down 3</a></li>
-                        <li><a href="#">Deep Drop Down 4</a></li>
-                        <li><a href="#">Deep Drop Down 5</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Drop Down 3</a></li>
-                    <li><a href="#">Drop Down 4</a></li>
-                    <li><a href="#">Drop Down 5</a></li>
-                    </ul>
-                </li>
-                <li><a href="#contact">تواصل معنا</a></li>
-                </ul>
-            </nav><!-- .main-nav -->
-        
+    <div class="bgimg">
+        <div id="bg"></div>
+        <div class="topleft">
+          <p>adcurt.com</p>
+          <small>what you deserver!</small>
         </div>
-    </header><!-- #header -->
-
-    <!--==========================
-        Intro Section
-    ============================-->
-    <section id="intro" class="clearfix">
-        <div class="container">
-
-            <div class="intro-img">
-                <img src="img/intro-img.svg" alt="" class="img-fluid">
-            </div>
-
-            <div class="intro-info">
-                <h2>نحن نوفر<br><span>حلولًا</span><br> لعملك!</h2>
-                <div>
-                <a href="#about" class="btn-get-started scrollto">ابدأ الآن</a>
-                <a href="#services" class="btn-services scrollto">خدماتنا</a>
-                </div>
-            </div>
-
+        <div class="middle">
+          <h1>COMING SOON</h1>
+          <hr>
+          <p id="demo"></p>
+          <div id="curt"><img width="100%" height="100%"src="images/curt.gif" /></div>
         </div>
-    </section><!-- #intro -->
-
-    <main id="main">
-
-        <!--==========================
-        About Us Section
-        ============================-->
-        <section id="about">
-            <div class="container">
-                <header class="section-header">
-                    <h3>من نحن</h3>
-                    <p>
-                        <span>أدكورت</span>، نحن فريق من المتخصصين في هندسة البرمجيات، وهدفنا الأسمى هو تقديم حلول ذكية تتناسب مع متطلبات عملك.
-                    </p>
-                </header>
-
-                <div class="row about-container">
-
-                    <div class="col-lg-6 content order-lg-1 order-2">
-                    <p>
-                        نحن نسعى جاهدين لتوفير حلول برمجية عالية الجودة وفعالة، والتي تتماشى مع احتياجات عملك. فنحن نضع جودة العمل في المقدمة، ونسعى لتحقيق أعلى مستويات الرضا لدى عملائنا.
-                    </p>
-
-                    <div class="icon-box wow fadeInUp">
-                        <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-                        <h4 class="title"><a href="">إدارة المشاريع</a></h4>
-                        <p class="description">نقدم خدمات إدارة المشاريع بكفاءة واحترافية، وفقًا لأعلى المعايير الدولية.</p>
-                    </div>
-
-                    <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="icon"><i class="fa fa-photo"></i></div>
-                        <h4 class="title"><a href="">تطوير البرمجيات</a></h4>
-                        <p class="description">نضمن تقديم حلول برمجية بجودة عالية، وفقًا لأحدث التقنيات والمعايير العالمية.</p>
-                    </div>
-
-                    <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="icon"><i class="fa fa-bar-chart"></i></div>
-                        <h4 class="title"><a href="">الاستشارات البرمجية</a></h4>
-                        <p class="description">نوفر استشارات برمجية متخصصة، وفقًا لأعلى المعايير الدولية وتحليلات البيانات المتقدمة.</p>
-                    </div>
-
-                    </div>
-
-                    <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
-                    <img src="img/about-img.svg" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="row about-extra">
-                    <div class="col-lg-6 wow fadeInUp">
-                    <img src="img/about-extra-1.svg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-                    <h4>نحن نوفر حلولًا برمجية مبتكرة ومتطورة، وفقًا لأحدث التقنيات العالمية.</h4>
-                    <p>
-                        نحن نسعى دائمًا لتحقيق أعلى مستويات الجودة في كل ما نقدمه، ونضع رضا العملاء في المقدمة. نحن نتبنى أفضل الممارسات والأساليب في العمل، ونسعى لتحقيق أفضل نتائج.
-                    </p>
-                    <p>
-                        نحن نؤمن بأهمية الابتكار والتحديث المستمر، ونسعى دائمًا لتحسين خدماتنا وتطويرها لتلبية احتياجات عملائنا. ونحن نضمن توفير حلولًا برمجية متميزة، تساعدك في تحقيق أهدافك ونجاح عملك.
-                    </p>
-                    </div>
-                </div>
-
-                <div class="row about-extra">
-                    <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-                    <img src="img/about-extra-2.svg" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-                    <h4>نحن نتبنى أعلى المعايير الدولية في جميع خدماتنا البرمجية.</h4>
-                    <p>
-                        نحن نفخر بخبرتنا في مجال هندسة البرمجيات والتكنولوجيا، ونضمن توفير حلول برمجية متميزة وفعالة لعملائنا. نحن نعمل بجد لتحقيق أهداف عملائنا وتلبية احتياجاتهم، ونسعى لتحقيق أعلى مستويات الرضا لديهم.
-                    </p>
-                    <p>
-                        كما نوفر خدمة ما بعد البيع المميزة والدعم الفني الشامل، لضمان عمل مثالي لحلولنا البرمجية وتلبية كافة احتياجاتكم.
-                    </p>
-                    <p>
-                        إذا كنت تبحث عن شركة برمجية محترفة وموثوقة، تقدم حلولًا ذكية وفعالة لعملك، فلا تتردد في التواصل معنا الآن للحصول على استشارة مجانية وتقديم خدماتنا المتميزة.
-                    </p>
-                    </div>
-                    
-                </div>
-            </div>
-        </section><!-- #about -->
-
-        <!--==========================
-        Services Section
-        ============================-->
-        <section id="services" class="section-bg">
-            <div class="container">
-
-                <header class="section-header">
-                    <h3>خدماتنا</h3>
-                    <p>نحن نقدم حلولًا متكاملة ومبتكرة في مجال تطوير البرمجيات وتحليل البيانات وإدارة المشاريع وتصميم الواجهات الإستخدامية وخدمات الدعم الفني.</p>
-                </header>
-
-                <div class="row">
-                    <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
-                            <h4 class="title"><a href="">تحليل البيانات</a></h4>
-                            <p class="description">نقدم خدمات تحليل البيانات واستخراج الإحصائيات والتقارير المتعلقة بالأعمال لمساعدة الشركات في اتخاذ القرارات الصحيحة وتحقيق النتائج المرجوة.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
-                            <h4 class="title"><a href="">تطوير البرمجيات</a></h4>
-                            <p class="description">نقدم خدمات تطوير البرمجيات المخصصة والتطبيقات الذكية والمواقع الإلكترونية باستخدام أحدث التقنيات والأدوات لتلبية احتياجات العملاء وتحقيق أهدافهم.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
-                            <h4 class="title"><a href="">نظام تخطيط موارد المؤسسات (ERP)</a></h4>
-                            <p class="description">نظامنا المتكامل يدعم إدارة جميع عمليات شركتك، يحسّن كفاءة العمليات ويساعد على تحقيق أهداف النمو والربحية، ويوفر نظرة شاملة لأداء الشركة، مما يمكّنك من اتخاذ القرارات الاستراتيجية الصحيحة.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
-                            <h4 class="title"><a href="">تطوير تطبيقات الهواتف الذكية</a></h4>
-                            <p class="description">نقدم خدمات تطوير تطبيقات الهواتف الذكية بأسلوب مبتكر وجذاب لتلبية احتياجات العملاء من تطبيقات الأعمال والألعاب والترفيه والتواصل الاجتماعي وغيرها.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="icon"><i class="ion-ios-world-outline" style="color: #d6ff22;"></i></div>
-                            <h4 class="title"><a href="">تصميم وتطوير المواقع الإلكترونية</a></h4>
-                            <p class="description">نقدم خدمات تصميم وتطوير المواقع الإلكترونية الجذابة والمتجاوبة مع جميع الأجهزة والمتصفحات بأحدث التقنيات والأدوات لتحقيق أهداف العملاء.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="icon"><i class="ion-ios-clock-outline" style="color: #4680ff;"></i></div>
-                            <h4 class="title"><a href="">خدمات الدعم الفني والصيانة</a></h4>
-                            <p class="description">نقدم خدمات الدعم الفني والصيانة للمواقع الإلكترونية والتطبيقات الذكية بأسعار تنافسية لضمان استمرارية العمل وتحديث التقنيات وإصلاح الأخطاء والمشاكل.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- #services -->
-
-        <!--==========================
-        Why Us Section
-        ============================-->
-        <section id="why-us" class="wow fadeIn">
-            <div class="container">
-                <header class="section-header">
-                    <h3>لماذا تختارنا؟</h3>
-                    <p>نقدم خدمات متكاملة لتلبية احتياجات عملائنا بأعلى جودة وتقنيات حديثة وفريق عمل متخصص.</p>
-                </header>
-
-                <div class="row row-eq-height justify-content-center">
-
-                    <div class="col-lg-4 mb-4">
-                        <div class="card wow bounceInUp">
-                            <i class="fa fa-diamond"></i>
-                            <div class="card-body">
-                                <h5 class="card-title">جودة عالية</h5>
-                                <p class="card-text">نحرص دائمًا على تقديم خدمات ذات جودة عالية لتحقيق رضا العملاء وتحقيق أهدافهم بكفاءة وفاعلية.</p>
-                                <a href="#" class="readmore">المزيد </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-4">
-                        <div class="card wow bounceInUp">
-                            <i class="fa fa-language"></i>
-                            <div class="card-body">
-                                <h5 class="card-title">تخصص وخبرة</h5>
-                                <p class="card-text">يتميز فريق عملنا بالتخصص والخبرة العالية في مجالات تصميم وتطوير المواقع والتطبيقات الذكية والدعم الفني.</p>
-                                <a href="#" class="readmore">المزيد </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-4">
-                        <div class="card wow bounceInUp">
-                            <i class="fa fa-object-group"></i>
-                            <div class="card-body">
-                                <h5 class="card-title">توفير الحلول الشاملة</h5>
-                                <p class="card-text">نقدم حلولًا شاملة ومتكاملة لتلبية احتياجات العملاء من تصميم وتطوير المواقع والتطبيقات والدعم الفني والتسويق الإلكتروني.</p>
-                                <a href="#" class="readmore">المزيد </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row counters">
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">100</span>
-                        <p>عميل راضٍ</p>
-                    </div>
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">150</span>
-                        <p>مشروع ناجح</p>
-                    </div>
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">365</span>
-                        <p>ساعة دعم فني</p>
-                    </div>
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">25</span>
-                        <p>متخصص على درجة عالية من الكفاءة</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <!--==========================
-        Portfolio Section
-        ============================-->
-        <section id="portfolio" class="clearfix">
-        <div class="container">
-
-            <header class="section-header">
-            <h3 class="section-title">أعمالُنا</h3>
-            </header>
-
-            <div class="row">
-            <div class="col-lg-12">
-                <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Card</li>
-                <li data-filter=".filter-web">Web</li>
-                </ul>
-            </div>
-            </div>
-
-            <div class="row portfolio-container">
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                    <h4><a href="#">App 1</a></h4>
-                    <p>App</p>
-                    <div>
-                    <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-                <div class="portfolio-wrap">
-                <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                    <h4><a href="#">Web 3</a></h4>
-                    <p>Web</p>
-                    <div>
-                    <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-                <div class="portfolio-wrap">
-                <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                    <h4><a href="#">App 2</a></h4>
-                    <p>App</p>
-                    <div>
-                    <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                    <h4><a href="#">Card 2</a></h4>
-                    <p>Card</p>
-                    <div>
-                    <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-                <div class="portfolio-wrap">
-                <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                    <h4><a href="#">Web 2</a></h4>
-                    <p>Web</p>
-                    <div>
-                    <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-                <div class="portfolio-wrap">
-                <img src="img/portfolio/app3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                    <h4><a href="#">App 3</a></h4>
-                    <p>App</p>
-                    <div>
-                    <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                    <h4><a href="#">Card 1</a></h4>
-                    <p>Card</p>
-                    <div>
-                    <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
-                <div class="portfolio-wrap">
-                <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                    <h4><a href="#">Card 3</a></h4>
-                    <p>Card</p>
-                    <div>
-                    <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
-                <div class="portfolio-wrap">
-                <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                    <h4><a href="#">Web 1</a></h4>
-                    <p>Web</p>
-                    <div>
-                    <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            </div>
-
+        <div class="bottomleft">
+          <p>Get What You Deserve</p>
         </div>
-        </section><!-- #portfolio -->
+    </div>
+    
 
-        <!--==========================
-            Clients Section
-        ============================-->
-        <section id="testimonials" class="section-bg">
-            <div class="container">
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
 
-                <header class="section-header">
-                    <h3>آراء العملاء</h3>
-                </header>
+        // Update the count down every 1 second
+        var x = setInterval(function() {
 
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
+        // Get todays date and time
+        var now = new Date().getTime();
 
-                        <div class="owl-carousel testimonials-carousel wow fadeInUp">
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
 
-                            <div class="testimonial-item">
-                                <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
-                                <h3>أميرة العنزي</h3>
-                                <h4>مؤسسة شركة العنزي للتجارة</h4>
-                                <p>
-                                نشكر فريق عمل الشركة على تصميم وتطوير موقعنا الإلكتروني بكفاءة واحترافية عالية، ونوصي بشدة بالتعامل معهم.
-                                </p>
-                            </div>
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                            <div class="testimonial-item">
-                                <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
-                                <h3>عبدالرحمن الجاسر</h3>
-                                <h4>مدير عام شركة الجاسر للتقنية</h4>
-                                <p>
-                                شركة رائعة وفعّالة في تصميم وتطوير التطبيقات الذكية، تعاملت معهم بكفاءة عالية وأنصح بالتعامل معهم لتجربة فريدة ومميزة.
-                                </p>
-                            </div>
+        // Display the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
 
-                            <div class="testimonial-item">
-                                <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
-                                <h3>فاطمة الشمري</h3>
-                                <h4>مديرة تسويق أحد المشاريع الناجحة</h4>
-                                <p>
-                                نحن سعداء جدًا بالتعامل مع فريق العمل المتخصص في شركة تطوير المواقع، ونشكرهم على الجهود الكبيرة التي بذلوها في تسويق المشروع وجعله ناجحًا.
-                                </p>
-                            </div>
-
-                            <div class="testimonial-item">
-                                <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
-                                <h3>علي العمير</h3>
-                                <h4>رائد أعمال في مجال التقنية</h4>
-                                <p>
-                                لقد كانت تجربة رائعة ومميزة التعامل مع فريق شركة تطوير المواقع، حيث تم تصميم وتطوير تطبيقي بكفاءة عالية وبجودة عالية للغاية.
-                                </p>
-                            </div>
-
-                            <div class="testimonial-item">
-                                <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
-                                <h3>أحمد السهلي</h3>
-                                <h4>مدير مؤسسة السهلي للتقنية</h4>
-                                <p>
-                                شركة تطوير المواقع هي شركة رائدة في مجال تصميم وتطوير المواقع والتطبيقات، وأنصح بشدة بالتعامل معهم للحصول على خدمات متميزة ومميزة.
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- #testimonials -->
-
-        <!--==========================
-        Team Section
-        ============================-->
-        <section id="team">
-        <div class="container">
-            <div class="section-header">
-            <h3>Team</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-            </div>
-
-            <div class="row">
-
-            <div class="col-lg-3 col-md-6 wow fadeInUp">
-                <div class="member">
-                <img src="img/team-1.jpg" class="img-fluid" alt="">
-                <div class="member-info">
-                    <div class="member-info-content">
-                    <h4>Walter White</h4>
-                    <span>Chief Executive Officer</span>
-                    <div class="social">
-                        <a href=""><i class="fa fa-twitter"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-google-plus"></i></a>
-                        <a href=""><i class="fa fa-linkedin"></i></a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="member">
-                <img src="img/team-2.jpg" class="img-fluid" alt="">
-                <div class="member-info">
-                    <div class="member-info-content">
-                    <h4>Sarah Jhonson</h4>
-                    <span>Product Manager</span>
-                    <div class="social">
-                        <a href=""><i class="fa fa-twitter"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-google-plus"></i></a>
-                        <a href=""><i class="fa fa-linkedin"></i></a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="member">
-                <img src="img/team-3.jpg" class="img-fluid" alt="">
-                <div class="member-info">
-                    <div class="member-info-content">
-                    <h4>William Anderson</h4>
-                    <span>CTO</span>
-                    <div class="social">
-                        <a href=""><i class="fa fa-twitter"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-google-plus"></i></a>
-                        <a href=""><i class="fa fa-linkedin"></i></a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="member">
-                <img src="img/team-4.jpg" class="img-fluid" alt="">
-                <div class="member-info">
-                    <div class="member-info-content">
-                    <h4>Amanda Jepson</h4>
-                    <span>Accountant</span>
-                    <div class="social">
-                        <a href=""><i class="fa fa-twitter"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-google-plus"></i></a>
-                        <a href=""><i class="fa fa-linkedin"></i></a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            </div>
-
-        </div>
-        </section><!-- #team -->
-
-        <!--==========================
-        Clients Section
-        ============================-->
-        <section id="clients" class="section-bg">
-
-        <div class="container">
-
-            <div class="section-header">
-            <h3>عملائنا</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome nida.</p>
-            </div>
-
-            <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
-
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <div class="client-logo">
-                <img src="img/clients/client-1.png" class="img-fluid" alt="">
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <div class="client-logo">
-                <img src="img/clients/client-2.png" class="img-fluid" alt="">
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <div class="client-logo">
-                <img src="img/clients/client-3.png" class="img-fluid" alt="">
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <div class="client-logo">
-                <img src="img/clients/client-4.png" class="img-fluid" alt="">
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <div class="client-logo">
-                <img src="img/clients/client-5.png" class="img-fluid" alt="">
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <div class="client-logo">
-                <img src="img/clients/client-6.png" class="img-fluid" alt="">
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <div class="client-logo">
-                <img src="img/clients/client-7.png" class="img-fluid" alt="">
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <div class="client-logo">
-                <img src="img/clients/client-8.png" class="img-fluid" alt="">
-                </div>
-            </div>
-
-            </div>
-
-        </div>
-
-        </section>
-
-        <!--==========================
-        Contact Section
-        ============================-->
-        <section id="contact">
-        <div class="container-fluid">
-
-            <div class="section-header">
-            <h3>Contact Us</h3>
-            </div>
-
-            <div class="row wow fadeInUp">
-
-            <div class="col-lg-6">
-                <div class="map mb-4 mb-lg-0">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="row">
-                <!-- <div class="col-md-5 info">
-                    <i class="ion-ios-location-outline"></i>
-                    <p>A108 Adam Street, NY 535022</p>
-                </div> -->
-                <div class="col-md-4 info">
-                    <i class="ion-ios-email-outline"></i>
-                    <p>info@adcurt.com</p>
-                </div>
-                <div class="col-md-3 info">
-                    <i class="ion-ios-telephone-outline"></i>
-                    <p>+201026064028</p>
-                </div>
-                </div>
-
-                <div class="form">
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-                <form action="" method="post" role="form" class="contactForm">
-                    <div class="form-row">
-                    <div class="form-group col-lg-6">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                        <div class="validation"></div>
-                    </div>
-                    <div class="form-group col-lg-6">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                        <div class="validation"></div>
-                    </div>
-                    </div>
-                    <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                    </div>
-                    <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                    </div>
-                    <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-                </form>
-                </div>
-            </div>
-
-            </div>
-
-        </div>
-        </section><!-- #contact -->
-
-    </main>
-
-    <!--==========================
-        Footer
-    ============================-->
-    <footer id="footer">
-        <div class="footer-top">
-        <div class="container">
-            <div class="row">
-
-            <div class="col-lg-4 col-md-6 footer-info">
-                <h3>adcurt</h3>
-                <p>لا تشغل بالك بالتفكير، أطلب وأترك الباقي علينا.</p>
-            </div>
-
-            <div class="col-lg-2 col-md-6 footer-links">
-                <h4>روابط تهمك</h4>
-                <ul>
-                    <li><a href="#">الرئيسية</a></li>
-                    <li><a href="#">من نحن</a></li>
-                    <li><a href="#">خدماتنا</a></li>
-                </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-contact">
-                <h4>تواصل معنا</h4>
-                <!-- <p>
-                A108 Adam Street <br>
-                New York, NY 535022<br>
-                United States <br> -->
-                <strong>موبايل:</strong> +201026064028<br>
-                <strong>إيميل:</strong> info@adcurt.com<br>
-                </p>
-
-                <div class="social-links">
-                <a href="https://www.linkedin.com/company/adcurt" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/company/adcurt" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/company/adcurt" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/adcurt" target="_blank" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                <a href="https://www.linkedin.com/company/adcurt" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                </div>
-
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-newsletter">
-                <h4>نشرتنا الإخبارية</h4>
-                <p>اشترك في نشرتنا الإخبارية لتصلك آخر أخبارنا ومستجداتنا في عالم تطوير البرمجيات وتكنولوجيا المعلومات.</p>
-                <form action="" method="post">
-                   <input type="email" name="email" placeholder="البريد الإلكتروني"><input type="submit"  value="اشترك">
-                </form>
-            </div>
-
-            </div>
-        </div>
-        </div>
-
-        <div class="container">
-        <div class="copyright">
-            &copy; Copyright <strong>Adcurt</strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-            <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
-            -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-        </div>
-    </footer><!-- #footer -->
-
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <!-- Uncomment below i you want to use a preloader -->
-    <!-- <div id="preloader"></div> -->
-
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/mobile-nav/mobile-nav.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
-
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
-
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+    </script>
 </body>
 </html>
